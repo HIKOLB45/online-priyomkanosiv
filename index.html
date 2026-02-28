@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Онлайн прийомка металу</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Онлайн прийомка металу</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Матеріал</th>
+        <th>Ціна ₴</th>
+        <th>Ціна з акт. прийому ₴</th>
+        <th>Од.в.</th>
+        <th>Вага</th>
+        <th>Вартість</th>
+        <th>Фото / Документи</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Приклад одного рядка, далі копіюй і вставляй всі матеріали -->
+      <tr>
+        <td>Мідь блиск</td>
+        <td data-price="490">490</td>
+        <td data-act="492">492</td>
+        <td>кг</td>
+        <td><input type="number" min="0" value="0" class="weight"></td>
+        <td class="total">0</td>
+        <td><input type="file" class="photo"></td>
+      </tr>
+      <tr>
+        <td>Мідь</td>
+        <td data-price="460">460</td>
+        <td data-act="465">465</td>
+        <td>кг</td>
+        <td><input type="number" min="0" value="0" class="weight"></td>
+        <td class="total">0</td>
+        <td><input type="file" class="photo"></td>
+      </tr>
+      <tr>
+        <td>Мідь фосфориста</td>
+        <td data-price="550">550</td>
+        <td data-act="0">0</td>
+        <td>кг</td>
+        <td><input type="number" min="0" value="0" class="weight"></td>
+        <td class="total">0</td>
+        <td><input type="file" class="photo"></td>
+      </tr>
+      <!-- Продовжуй всі інші матеріали сюди -->
+    </tbody>
+  </table>
+
+  <h2>Загальна вартість: <span id="grandTotal">0</span> ₴</h2>
+
+  <h2>Інструкція для відправки посилок:</h2>
+  <p>
+    ПОСИЛКИ З ПІСЛЯПЛАТОЮ (НАЛОЖКОЮ, НАКЛАДЕНИМ ПЛАТЕЖЕМ) НЕ ПРИЙМАЄМО!<br>
+    Обов'язково в посилку вкласти листок з:<br>
+    - Номер банківської картки<br>
+    - Прізвище та ім'я власника<br>
+    - Номер телефону<br>
+    - Вид матеріалу/матеріалів<br>
+    - Точна вага матеріалу/матеріалів<br>
+    - Чи повертати неприйомний матеріал
+  </p>
+  <p>
+    Адреси для відправки:<br>
+    <strong>НОВА ПОШТА</strong>: вул. Вокзальна, 10д, м. Носівка, Чернігівська область, 17100<br>
+    <strong>УКРПОШТА</strong>: вул. Центральна, 18, м. Носівка
+  </p>
+
+  <script src="script.js"></script>
+</body>
+</html>
